@@ -13,12 +13,6 @@ for question in question_data:
 
 
 quiz = QuizBrain(question_bank)
-
-#once the code hits the line below, it is going to create a new object from the QuizInterface class 
-# and hits the __init__ method
-#so the quiz created in QiuzBrain will pass into QuizInterface and to catch it we have to add another parameter
-#in ui.py __init__(self) --> __init__(self, quiz_brain)
-#and then create a property self.quiz = quiz_brain
 quiz_ui = QuizInterface(quiz)
 
 
