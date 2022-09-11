@@ -22,10 +22,10 @@ class QuizInterface:
         self.score_label.grid(column=1, row=0)
         self.score_label.config(fg="white", bg=THEME_COLOR, font=("Arial", 12, "normal"))
 
-        false_image = PhotoImage(file=r"PROJECTS\100days_of_code\API_module\API_Trivia_Quiz\images\false.png")
+        false_image = PhotoImage(file=r"your file path \false.png")
         self.false_button = Button(image=false_image, highlightthickness=0, command=self.false_pressed)
         self.false_button.grid(column=1, row=2)
-        true_image = PhotoImage(file=r"PROJECTS\100days_of_code\API_module\API_Trivia_Quiz\images\true.png")
+        true_image = PhotoImage(file=r"your file path \true.png")
         self.true_button = Button(image=true_image, highlightthickness=0, command=self.true_pressed)
         self.true_button.grid(column=0, row=2)
         
